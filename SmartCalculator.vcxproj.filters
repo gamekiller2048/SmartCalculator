@@ -27,6 +27,12 @@
     <ClCompile Include="src\sc\token.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="include\sc\errors.hpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sc\errors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\sc\lexer.hpp">

@@ -1,5 +1,6 @@
 #include <sc/lexer.hpp>
 #include <sc/token.hpp>
+#include <sc/errors.hpp>
 
 namespace sc
 {
@@ -42,7 +43,7 @@ namespace sc
 				step();
 			}
 			else
-				step(); // TODO: throw error invalid char
+				throw SyntaxError("unexpected char");
 		}
 
 		return tokens;
@@ -57,7 +58,7 @@ namespace sc
 
 			if(curr == '.') {
 				if(hasDecimal)
-					return Token{}; // TODO: throw error for another decimal in number
+					throw SyntaxError("unexpected decimal point");
 				hasDecimal = true;
 			}
 
