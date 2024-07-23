@@ -18,7 +18,13 @@
     <ClCompile Include="src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\sc\lexer.cpp">
+    <ClCompile Include="include\sc\error.hpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sc\error.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sc\node.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\sc\program.cpp">
@@ -27,21 +33,27 @@
     <ClCompile Include="src\sc\token.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="include\sc\errors.hpp">
+    <ClCompile Include="src\sc\lexer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\sc\errors.cpp">
+    <ClCompile Include="src\sc\parser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\sc\lexer.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="include\sc\program.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\sc\token.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sc\node.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sc\lexer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sc\parser.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

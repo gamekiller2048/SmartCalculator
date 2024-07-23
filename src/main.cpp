@@ -1,7 +1,8 @@
 #include <iostream>
 #include <sc/program.hpp>
 #include <sc/lexer.hpp>
-#include <sc/errors.hpp>
+#include <sc/parser.hpp>
+#include <sc/error.hpp>
 
 int main()
 {
@@ -13,6 +14,9 @@ int main()
 
 		for(const auto token : tokens)
 			std::cout << token;
+
+		sc::Parser parser(&program, tokens);
+		auto ast = parser.parse();
 	}
 	catch(const sc::Error& error) {
 		std::cout << error.getErrorString() << '\n';

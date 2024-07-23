@@ -92,6 +92,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <CompileAs>Default</CompileAs>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -106,6 +107,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <CompileAs>Default</CompileAs>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -120,6 +122,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <CompileAs>Default</CompileAs>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -134,6 +137,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <CompileAs>Default</CompileAs>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -143,15 +147,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="include\sc\errors.hpp" />
+    <ClCompile Include="include\sc\error.hpp" />
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\sc\errors.cpp" />
+    <ClCompile Include="src\sc\error.cpp" />
     <ClCompile Include="src\sc\lexer.cpp" />
+    <ClCompile Include="src\sc\node.cpp" />
+    <ClCompile Include="src\sc\parser.cpp" />
     <ClCompile Include="src\sc\program.cpp" />
     <ClCompile Include="src\sc\token.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\sc\lexer.hpp" />
+    <ClInclude Include="include\sc\node.hpp" />
+    <ClInclude Include="include\sc\parser.hpp" />
     <ClInclude Include="include\sc\program.hpp" />
     <ClInclude Include="include\sc\token.hpp" />
   </ItemGroup>
