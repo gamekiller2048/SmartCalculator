@@ -1,4 +1,4 @@
-#include <sc/errors.hpp>
+#include <sc/error.hpp>
 
 namespace sc
 {

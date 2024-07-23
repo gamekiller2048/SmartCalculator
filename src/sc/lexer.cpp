@@ -1,6 +1,6 @@
 #include <sc/lexer.hpp>
 #include <sc/token.hpp>
-#include <sc/errors.hpp>
+#include <sc/error.hpp>
 
 namespace sc
 {
